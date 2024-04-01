@@ -9,7 +9,7 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 function App() {
   return (
   <React.Fragment>
-     <Login/>
+     <Main/>
    </React.Fragment>
   )
  }
