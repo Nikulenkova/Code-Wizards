@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Code-Wizards/static/css/main.2b7c946d.css",
+    "main.js": "/Code-Wizards/static/js/main.833820a7.js",
+    "index.html": "/Code-Wizards/index.html",
+    "main.2b7c946d.css.map": "/Code-Wizards/static/css/main.2b7c946d.css.map",
+    "main.833820a7.js.map": "/Code-Wizards/static/js/main.833820a7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2b7c946d.css",
+    "static/js/main.833820a7.js"
+  ]
+}
