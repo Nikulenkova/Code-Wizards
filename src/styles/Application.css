@@ -6,14 +6,16 @@ body {
     width: 700px;
     height: 580px;
     position: absolute;
-    margin-top: 3%;
-    margin-left: 27%; 
+    /* margin-top: 3%;
+    margin-left: 27%;  */
     border-radius: 20px;
     font-family: Montserra;
     font-size: 25px;
     font-weight: regular;
     color: #507699;
     padding: 4%;
+    left: 27%; 
+    top: 15%;
 }
  .input2 {
     border-radius: 20px;
@@ -59,20 +61,20 @@ body {
     height: 74px;
     position: relative;
     cursor: pointer;
-    margin-top: 13%;
-    margin-left: 30%; 
+    /* margin-top: 13%;
+    margin-left: 30%; */
+    left: 30%;
+    top: 13%;
 }
 .woman {
     position: absolute;
-    /* margin-top: 14%;
-    margin-left: 7%; */
-    left: 6.5%;
-    top: 30%;
+    /* left: 6.5%;
+    top: 30%; */
 }
 .spot {
     position: absolute;
-    margin-top: 11%;
-    margin-left: 64.5%;
+    /* left: 65%;
+    top: 17%; */
 }
 
 .modal {
@@ -119,4 +121,26 @@ body {
     margin-left: 10px;
     background-color: #FFFFFF;
     cursor: pointer;
+    /* position: relative; ???*/
+} 
+
+@media (min-width: 1440px) {
+    .woman {
+        margin-top: 22%;
+        margin-left: 7%;
+    }
+    .spot {
+        margin-top: 11%;
+        margin-left: 64.5%; 
+    }
+}
+@media (min-width: 1920px) {
+    .woman {
+        margin-top: 19%;
+        margin-left: 12%;
+    }
+    .spot {
+        height: 0px;
+        width: 0px;
+    }
 }
