@@ -2,7 +2,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    sans-serif, 'Open Sans';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: linear-gradient(90deg, #FFFFFF, #FFEAFE);
@@ -27,8 +27,9 @@ margin-left: 5%;
 margin-top: 2%;
 position: absolute;
 } */
+/* @media screen and (max-width: 1440px){ */
 .help{
-  font-family: Montserra;
+  font-family: 'Open Sans';
   font-size: 20px;
   font-weight: bold;
   color: #A2A2A2;
@@ -38,12 +39,12 @@ position: absolute;
   border: none;
   margin-left: 70%;
   margin-top: 2%;
-  height: 30px;
-  width: 100px;
+  height: clamp(25px, 30px, 40px);/*30px;*/
+  width: clamp(90px, 100px, 120px);/*100px;*/
   cursor: pointer;
 }
 .logIn {
-  font-family: Montserra;
+  font-family: 'Open Sans';
   font-size: 20px;
   font-weight: bold;
   position: absolute;  
@@ -53,8 +54,8 @@ position: absolute;
   color: #000000;
   margin-left: 80%;
   margin-top: 2%;
-  height: 30px;
-  width: 70px;
+  height: clamp(25px, 30px, 35px);/*30px;*/
+  width: clamp(65px, 70px, 75px);/*70px;*/
   cursor: pointer;
 }
 /*input[type="text"] { 
@@ -75,63 +76,200 @@ position: absolute;
   position: absolute;
 } */
 
-.png{
-  margin-left: 58%;
-  margin-top: 10%;
-  position: absolute;
-}
+ .png{
+  /* margin-left: 60%;
+  margin-top: 20%;    */
+ position: absolute; 
+ /* left: 59%;
+ top: 18%; */
+} 
 .line1 {
   position: absolute;
-  margin-left: 41%;
-  margin-top: 17%;
+  /* margin-left: 35%;
+  margin-top: 45%;  */
+  /* left: 41%;
+  top: 35%; */
 }
 .line2 {
   position: absolute;
-  margin-left: 63%;
-  margin-top: 15%;
+  /* margin-left: 21%;
+  margin-top: 35%;  */
+  /* left: 65%;
+  top: 24%; */
 }
 .letter {
   position: absolute;
   margin-left: 64%;
   margin-top: 15%;
+  /* left: 65%;
+  top: 27%; */
 }
 .feedback {
-  background: #5255CA;
+  background: #83ADF2;
   border-radius: 20px;
   color: #fff;
-  font-size: 20px;
+  font-size: clamp(25px, 40%, 30px);
   font-weight: bold;
-  font-family: 'Montserrat';
+  font-family: 'Open Sans';
   cursor: pointer;
-  width: 300px;
-  height: 80px;
-  margin-left: 65.5%;
-  margin-top: 30%;
+  width: clamp(373px, 30%, 445px);
+  height: clamp(50px, 30%, 65px);
+  /* margin-left: 20%;
+  margin-top: 50%; */
+  /* left: 66.5%;
+  top: 48%; */
   position: absolute;
-  border: 2px solid #5255CA;
+  border: 2px solid #83ADF2;
 }
 
 .application {
-  font-size: 60px;
+  font-size: clamp(25px, 40%, 30px);
   font-weight: bold;
-  font-family: 'Montserrat';
-  background: #8E7FE8;
-  border-radius: 78px;
+  font-family: 'Open Sans';
+  background: #434DE5;
+  border-radius: 20px;
   color: #fff;
   position: absolute;
-  border: 2px solid #8E7FE8;
-  width: 470px;
-  height: 100px;
-  margin-left: 15%;
-  margin-top: 17%;
+  border: 2px solid #434DE5;
+  width: clamp(300px, 30%, 345px);
+  height: clamp(59px, 30%, 70px);
+  /* margin-left: 12%;
+  margin-top: 30%; */
   cursor: pointer;
+  /* left: 15%;
+  top: 30%; */
 }
 h1 {
   font-size: 25x;
   font-weight: lighter;
-  font-family: 'Montserrat';
+  font-family: 'Open Sans';
   color: #9A9898;
   position: absolute;
   margin-left: 10%;
-  margin-top: 25%;
+  margin-top: 25%; 
+}
+.modalWindow {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation-duration: 300ms;
+}
+
+.text {
+  background-color: #FFFFFF;
+  height: clamp(200px, 300px, 350px);/*300px;*/
+  width: clamp(550px, 650px, 800px);/*650px;*/
+  color: #000000;
+  font-family: 'Open Sans';
+  font-size: clamp(23px, 27px, 30px);/*27px;*/
+  font-weight: medium;
+  border-radius: 20px;
+  text-align: center;
+  padding: clamp(25px, 30px, 35px);/*30px;*/
+  line-height: 40px; 
+}
+
+.key {
+  background-color: #83ADF2;
+  border-radius: 78px;
+  border: none;
+  color: #fff;
+  font-family: 'Open Sans';
+  width: 50%;
+  height: 20%;
+  font-size: 20px;
+  padding-left: 2%;
+  position: relative;
+  margin-top: 7%;
+  outline: none !important;
+}
+.check {
+  background-color: #434DE5;
+  border-radius: 78px;
+  border: none;
+  color: #fff;
+  font-family: 'Open Sans';
+  height: 20%;
+  width: 50%;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 2%;
+}
+.close {
+  display: block;
+  width: 20px;
+  height: 20px;
+  --weight: 3px;
+  --aa: 1px; 
+  --color: black;
+  border-radius: 3px;
+  cursor: pointer;
+  position: absolute;
+  /* left: 72%;
+  top:34%; */
+  background:
+    linear-gradient(45deg, transparent calc(50% - var(--weight) - var(--aa)), var(--color) calc(50% - var(--weight)), var(--color) calc(50% + var(--weight)), transparent calc(50% + var(--weight) + var(--aa))),
+    linear-gradient(-45deg, transparent calc(50% - var(--weight) - var(--aa)), var(--color) calc(50% - var(--weight)), var(--color) calc(50% + var(--weight)), transparent calc(50% + var(--weight) + var(--aa)));
+}
+@media (min-width: 1440px)
+{
+  .close {
+    left: 72%;
+    top:34%;
+  }
+  .png{
+    margin-left: 60%;
+    margin-top: 20%;   
+  }
+  .line1 {
+    margin-left: 35%;
+    margin-top: 45%; 
+  }
+  .line2 {
+    margin-left: 21%;
+    margin-top: 35%; 
+  }
+  .feedback {
+    margin-left: 20%;
+    margin-top: 50%;
+  }
+  .application{
+    margin-left: 12%;
+    margin-top: 30%;
+  }
+}
+
+@media (min-width: 1920px)
+{
+  .close {
+    left: 67%;
+    top:34%;
+  }
+  .png{
+    margin-left: 60%;
+    margin-top: 16%;   
+  }
+  .line1 {
+    margin-left: 41%;
+    margin-top: 35%; 
+  }
+  .line2 {
+    margin-left: 34%;
+    margin-top: 27%; 
+  }
+  .feedback {
+    margin-left: 30%;
+    margin-top: 37%;
+  }
+  .application{
+    margin-left: 20%;
+    margin-top: 22%;
+  }
 }
