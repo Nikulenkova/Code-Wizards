@@ -5,7 +5,7 @@ body {
     background-color: #D9E7F4;
     width: 700px;
     height: 580px;
-    position: absolute;
+     position: absolute;  
     /* margin-top: 3%;
     margin-left: 27%;  */
     border-radius: 20px;
@@ -15,12 +15,12 @@ body {
     color: #507699;
     padding: 4%;
     left: 27%; 
-    top: 15%;
+    top: 15%; 
 }
  .input2 {
     border-radius: 20px;
     color: #9D9D9D;
-    font-family: Montserra;
+    font-family: 'Open Sans';
     font-size: 20px;
     background-color: #FFFFFF;
     border: 2px solid #c7c7c7;
@@ -31,7 +31,7 @@ body {
 .input3 {
     border-radius: 20px;
     color: #9D9D9D;
-    font-family: Montserra;
+    font-family: 'Open Sans';
     font-size: 20px;
     background-color: #FFFFFF;
     border: 2px solid #c7c7c7;
@@ -51,7 +51,7 @@ body {
 .send {
     background-color: #8CC8FF;
     color: #9D9D9D;
-    font-family: Open Sans;
+    font-family: 'Open Sans';
     font-size: 25px;
     font-weight: bold;
     color: #FFFFFF;
@@ -59,12 +59,12 @@ body {
     border: none;
     width: 350px;
     height: 74px;
-    position: relative;
+    position: absolute;
     cursor: pointer;
     /* margin-top: 13%;
-    margin-left: 30%; */
+    margin-left: 30%;  */
     left: 30%;
-    top: 13%;
+    top: 88%;  
 }
 .woman {
     position: absolute;
@@ -123,7 +123,6 @@ body {
     cursor: pointer;
     /* position: relative; ???*/
 } 
-
 @media (min-width: 1440px) {
     .woman {
         margin-top: 22%;
@@ -136,7 +135,7 @@ body {
 }
 @media (min-width: 1920px) {
     .woman {
-        margin-top: 19%;
+        margin-top: 17%;
         margin-left: 12%;
     }
     .spot {
@@ -144,3 +143,27 @@ body {
         width: 0px;
     }
 }
+@media (max-width: 997px) {
+    .woman {
+        margin-top: 30%;
+        margin-left: 3%;
+        width: 240px;
+        height: 412px;
+    }
+    .spot {
+        height: 0px;
+        width: 0px;
+    }
+}
+@media (min-width: 998px) {
+    .woman {
+        margin-top: 25%;
+        margin-left: 11%;
+        width: 240px;
+        height: 412px;
+    }
+    .spot {
+        height: 0px;
+        width: 0px;
+    }
+} 
