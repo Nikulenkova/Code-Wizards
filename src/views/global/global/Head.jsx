@@ -1,5 +1,4 @@
 import React from "react";
-import Login from "../../../pages/Login";
 
 function Help()
 {
@@ -7,7 +6,7 @@ function Help()
 } 
 class LogIn extends React.Component {
    onclick() {
-      window.location.assign(Login);
+      window.location.assign('/login');
    }
    render() {
        return (<button className='logIn' onClick={(e) => this.onclick(e)}>Вход</button>)
