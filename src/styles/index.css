@@ -5,7 +5,7 @@ body {
     sans-serif, 'Open Sans';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(90deg, #FFFFFF, #FFEAFE);
+  background: #FFFFFF;
 }
 
 code {
@@ -80,11 +80,15 @@ position: absolute;
   /* margin-left: 60%;
   margin-top: 20%;    */
  position: absolute; 
+ width: clamp(470px, 50%, 508px);
+ height: clamp(364px, 50%, 408px); 
  /* left: 59%;
  top: 18%; */
 } 
 .line1 {
   position: absolute;
+  width: clamp(563px, 20%, 650px);
+  height: clamp(178px, 20%, 274px); 
   /* margin-left: 35%;
   margin-top: 45%;  */
   /* left: 41%;
@@ -92,6 +96,7 @@ position: absolute;
 }
 .line2 {
   position: absolute;
+  width: clamp(110px, 8%, 240px);
   /* margin-left: 21%;
   margin-top: 35%;  */
   /* left: 65%;
@@ -217,6 +222,54 @@ h1 {
   background:
     linear-gradient(45deg, transparent calc(50% - var(--weight) - var(--aa)), var(--color) calc(50% - var(--weight)), var(--color) calc(50% + var(--weight)), transparent calc(50% + var(--weight) + var(--aa))),
     linear-gradient(-45deg, transparent calc(50% - var(--weight) - var(--aa)), var(--color) calc(50% - var(--weight)), var(--color) calc(50% + var(--weight)), transparent calc(50% + var(--weight) + var(--aa)));
+}
+@media screen and (min-width:1023px) and (max-width: 1260px){
+  /* .close {
+    left: 72%;
+    top:34%;
+  } */
+  .png{
+    margin-left: 55%;
+    margin-top: 20%;   
+  }
+  .line1 {
+    margin-left: 30%;
+    margin-top: 54%; 
+  }
+  .line2 {
+    margin-left: 16%;
+    margin-top: 37%; 
+  }
+  .feedback {
+    margin-left: 14%;
+    margin-top: 57%;
+  }
+  .application{
+    margin-left: 5%;
+    margin-top: 30%;
+  } 
+}
+@media screen and (min-width: 1261px) {
+  .png{
+    margin-left: 55%;
+    margin-top: 20%;   
+  }
+  .line1 {
+    margin-left: 30%;
+    margin-top: 50%; 
+  }
+  .line2 {
+    margin-left: 19%;
+    margin-top: 40%; 
+  }
+  .feedback {
+    margin-left: 14%;
+    margin-top: 56%;
+  }
+  .application{
+    margin-left: 5%;
+    margin-top: 33%;
+  }
 }
 @media (min-width: 1440px)
 {
