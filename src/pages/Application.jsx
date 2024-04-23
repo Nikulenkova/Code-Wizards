@@ -7,7 +7,6 @@ import woman from '../images/woman(application).png'
 import spot from '../images/Пятно(Application).png'
 import copy from '../images/копирование.png'
 import Popup from 'reactjs-popup';
-import Main from './Main'
 
  function Woman() {
  return(
@@ -21,7 +20,7 @@ import Main from './Main'
     )
     }
 
-class Main extends React.Component {
+    class Main extends React.Component {
         onclick(){
       window.location.assign('/')
         }
@@ -35,8 +34,11 @@ const Application = () => {
     const [inputValue, setInputValue] = useState("");
     return (
         <React.Fragment>
+            <div className="container">
+            <div className="data-section">
             <Head2></Head2>
-            <Woman/>
+            <div className="d2">
+            <Woman/> 
             <Spot/>
             <form className="form2">
                 Введите ваше имя и фамилию по желанию<br/>
@@ -65,6 +67,9 @@ const Application = () => {
                 }
                 </Popup>
             </form>
+            </div>
+            </div>
+            </div>
         </React.Fragment>
         )
     }
