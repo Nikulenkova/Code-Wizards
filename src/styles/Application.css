@@ -1,23 +1,31 @@
 body {
     background-color: #FFFFFF;
-}
-.form2 {
+    }
+    .container {
+        position: relative;
+         width: 100%;
+        height: 100vh; 
+        display: flex;
+        flex-direction: column; 
+    }
+    .data-section {
+        width: 100%;
+    }
+    .form2 {
     background-color: #D9E7F4;
     width: 700px;
     height: 580px;
-     position: absolute;  
-    /* margin-top: 3%;
-    margin-left: 27%;  */
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 20%; 
     border-radius: 20px;
     font-family: 'Open Sans';
     font-size: 25px;
     font-weight: regular;
     color: #507699;
-    padding: 4%;
-    left: 27%; 
-    top: 15%; 
-}
- .input2 {
+    padding: 3%;
+    }
+    .input2 {
     border-radius: 20px;
     color: #9D9D9D;
     font-family: 'Open Sans';
@@ -27,8 +35,8 @@ body {
     width: 100%;
     height: 40px;
     padding-left: 10px;
-}
-.input3 {
+    }
+    .input3 {
     border-radius: 20px;
     color: #9D9D9D;
     font-family: 'Open Sans';
@@ -39,9 +47,9 @@ body {
     height: 250px;
     padding-left: 10px;
     padding-top: 10px;
-} 
-
-#textbox {
+    }
+    
+    #textbox {
     position: absolute;
     border-radius: 40px;
     width: 500px;
@@ -49,9 +57,15 @@ body {
     /* margin-top: 5%;
     margin-left: 7%;  */
     border: 2px solid #474791;
-}
+    }
+    .d1 {
+        position: absolute;
+        padding: 10px;
+        margin-top: 4%;
+        margin-left: 4%;
+    }
 
-.send {
+    .send {
     background-color: #8CC8FF;
     color: #9D9D9D;
     font-family: 'Open Sans';
@@ -65,24 +79,27 @@ body {
     position: absolute;
     cursor: pointer;
     /* margin-top: 13%;
-    margin-left: 30%;  */
+    margin-left: 30%; */
     left: 30%;
-    top: 88%;  
-}
-.woman {
+    top: 88%;
+    }
+    .woman {
     position: absolute;
-    width: clamp(240px, 279px, 306px);
-    height: clamp(412px, 459px, 505px);
-    /* left: 8%;
-    top: 34%;  */
-}
-.spot {
+    /* width: clamp(240px, 279px, 306px);
+    height: clamp(412px, 459px, 505px);   */
+    float: left;
+    /* margin-top: 20%;
+    margin-left: 0%; */
+    }
+    .spot {
     position: absolute;
-    left: 65%;
-    top: 17%;  
-}
-
-.modal {
+    width: 0px;
+    height: 0px;
+    /* left: 65%;
+    top: 17%; */
+    }
+    
+    .modal {
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.4);
@@ -93,16 +110,9 @@ body {
     align-items: center;
     justify-content: center;
     animation-duration: 300ms;
-}
-
-.d1 {
-        position: absolute;
-        padding: 10px;
-        margin-top: 4%;
-        margin-left: 4%;
     }
-
-.content {
+    
+    .content {
     background-color: #FFFFFF;
     height: 370px;
     width: 700px;
@@ -114,10 +124,10 @@ body {
     text-align: center;
     /* padding-top: 20px; */
     line-height: 60px;
-    padding: 3%;;
-}
-.main {
-background-color: #6BCAFF;
+    padding: 3%;
+    }
+    .main {
+    background-color: #6BCAFF;
     font-family: 'Open Sans';
     font-size: 30px;
     font-weight: bold;
@@ -129,47 +139,52 @@ background-color: #6BCAFF;
     height: 74px;
     cursor: pointer;
     margin-top: 26%;
-}
-.copy {
+    }
+    .Copy {
     position: relative; 
     background-color: #FFFFFF;
     cursor: pointer;
     margin-left: 510px;
-} 
+    }
+/* .d2 {
+    position: absolute;
+    margin-top: 15%;
+    margin-left: 20%;
+} */
+    @media screen and  (min-width: 768px) and (max-width:1223px) {
+    .spot {
+    height: 0px;
+    width: 0px;
+    }
+    .woman {
+    width: 241px;
+    height: 412px;
+    left: 0%;
+    top: 37%;
+    }
+    }
+    @media screen and (min-width: 1224px) {
+    .spot {
+    height: 0px;
+    width: 0px;
+    }
+    .woman {
+    width: 248.5px;
+    height: 459px;
+    left: 5.5%;
+    top: 40%;
+    }
+    }
+    @media screen and (min-width: 1824px) {
+    .spot {
+    height: 0px;
+    width: 0px;
+    }
+    .woman {
+    width: 306px;
+    height:505px;
+    left: 6%;
+    top: 40%;
+    }
+    }     
 
-@media (min-width: 768px) and (max-width:1024px) {
-    .spot {
-        height: 0px;
-        width: 0px;
-    }
-    .woman {
-        width: 241px;
-        height: 412px;
-        left: 3%;
-        top: 35%;
-    }
-}
-@media (min-width: 1224px) {
-    .spot {
-        height: 0px;
-        width: 0px;
-    }
-    .woman {
-        width: 248.5px;
-        height: 459px;
-        left: 8%;
-        top: 35%;
-    }
-}
-@media (min-width: 1824px) {
-    .spot {
-        height: 0px;
-        width: 0px;
-    }
-    .woman {
-        width: 306px;
-        height:505px;
-        left: 11%;
-        top: 33%;
-    }
-}
