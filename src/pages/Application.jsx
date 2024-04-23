@@ -21,6 +21,15 @@ import Main from './Main'
     )
     }
 
+class Main extends React.Component {
+        onclick(){
+      window.location.assign('/')
+        }
+        render() {
+          return <button className="main" onClick={(e) => this.onclick(e)}>Перейти на главную</button>
+        }
+      }
+
 const Application = () => {
     const [photo, setPhoto] = useState(null);
     const [inputValue, setInputValue] = useState("");
@@ -44,10 +53,12 @@ const Application = () => {
                         <div className='modal'>
                             <div className='content'>
                             Спасибо за заявку!<br/>
-                            Ваш ключ для просмотра обратной связи!
-                            <input id="textbox" value={inputValue} onChange={e => setInputValue(e.target.value)}></input>
-                            <button onClick={() => {navigator.clipboard.writeText(inputValue)}}><img src={copy} width="20" height="20"></img></button>
-                            <button className="main" onClick={() => Main}>Перейти на главную</button>
+                            Ваш ключ для просмотра обратной связи!  
+                            <div className="d1">
+                            <div id="textbox" value={inputValue} onChange={e => setInputValue(e.target.value)}></div>
+                            <button className = "Copy" onClick={() => {navigator.clipboard.writeText(inputValue)}}><img src={copy} width="30" height="30"></img></button>
+                            </div>
+                            <Main/>
                             </div>
                         </div>
                     )
