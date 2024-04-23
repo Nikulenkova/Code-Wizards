@@ -42,10 +42,13 @@ body {
 } 
 
 #textbox {
+    position: absolute;
     border-radius: 40px;
     width: 500px;
     height: 60px;
-    margin-top: 40px;
+    /* margin-top: 5%;
+    margin-left: 7%;  */
+    border: 2px solid #474791;
 }
 
 .send {
@@ -92,22 +95,30 @@ body {
     animation-duration: 300ms;
 }
 
+.d1 {
+        position: absolute;
+        padding: 10px;
+        margin-top: 4%;
+        margin-left: 4%;
+    }
+
 .content {
     background-color: #FFFFFF;
     height: 370px;
     width: 700px;
     color: #507699;
-    font-family: Open Sans;
+    font-family: 'Open Sans';
     font-size: 35px;
     font-weight: medium;
     border-radius: 20px;
     text-align: center;
-    padding-top: 20px;
+    /* padding-top: 20px; */
     line-height: 60px;
+    padding: 3%;;
 }
 .main {
-    background-color: #6BCAFF;
-    font-family: Open Sans;
+background-color: #6BCAFF;
+    font-family: 'Open Sans';
     font-size: 30px;
     font-weight: bold;
     color: #FFFFFF;
@@ -117,13 +128,13 @@ body {
     width: 350px;
     height: 74px;
     cursor: pointer;
-    margin-top: 50px;
+    margin-top: 26%;
 }
 .copy {
-    margin-left: 10px;
+    position: relative; 
     background-color: #FFFFFF;
     cursor: pointer;
-    /* position: relative; ???*/
+    margin-left: 510px;
 } 
 
 @media (min-width: 768px) and (max-width:1024px) {
