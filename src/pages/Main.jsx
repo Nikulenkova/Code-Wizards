@@ -1,7 +1,10 @@
 import React from "react";
 import Head from '../views/global/global/Head';
 import css from "../styles/index.css"
+// import ellips from '../images/Ellipse 1.png'
 import line from '../images/Line1.png'
+import vector from '../images/Vector 3.png'
+import letter from '../images/письмо_главное.png'
 import Popup from 'reactjs-popup';
 import main_woman from '../images/main_woman.png'
 import line_2 from '../images/Line2.png'
@@ -18,6 +21,10 @@ function Line2()
 {
   return <img className= 'line2' src={line_2}></img>
 }
+function Letter()
+{
+  return <img className= 'letter' src={letter}></img>
+}
 function Feedback()
 {
   return <Popup trigger= {<button className='feedback'>Посмотреть обратную связь</button>}
@@ -25,12 +32,14 @@ function Feedback()
     {
 close => ( 
   <div className='modalWindow'>
-    <Close/>
     <div className='text'>
+    <Close/>
     Если у вас уже есть ключ от обратной связи, <br/>
     введите его ниже, чтобы проверить статус вашего обращения<br/>
+    <div className="d1">
     <input className="key" placeholder = {"Ввести ключ..."}></input>
     <button className="check">Проверить обратную связь</button>
+    </div>
     </div>
   </div>
 )
@@ -59,12 +68,15 @@ window.location.assign('/application')
 const Main = () => {
     return (
         <React.Fragment>
+          <div className="conteiner">
             <Head></Head>
             <Main_woman></Main_woman>
             <Line1></Line1>
             <Line2></Line2>
             <Application></Application>
+            {/* <Letter></Letter> */}
             <Feedback></Feedback> 
+            </div>
         </React.Fragment>
     )
 }
