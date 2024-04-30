@@ -2,37 +2,42 @@
     font-family: Montserra;
   font-size: 20px;
   font-weight: bold;
-  color: #A2A2A2;
+  color: #000000;
   position: absolute;  
   background-color: rgba (0, 0, 0, 0);
   border-radius: 60px;
   border: none;
   margin-left: 5%;
   margin-top: 2%;
-  height: 30px;
-  width: 150px;
+  height: 33px;
+  width: 160px;
   cursor: pointer;
 }
 .tablet {
     position: absolute; 
-    margin-left: 15%;
-    margin-top: 3%;
+    /* margin-left: 15%;
+    margin-top: 3%; */
+    left: 19%;
+    top: 15%;
 }
 .human {
     position: absolute; 
-    margin-left: 25%;
-    margin-top: 7%;
+    /* margin-left: 25%;
+    margin-top: 7%; */
+    left: 30%;
+    top: 27%;
+    height: 70%;
 }
 .n {
     font-family: Montserra;
-  font-size: 50px;
+  font-size: clamp(45px, 60%, 60px);/*50px;*/
   font-weight: bold;
   position: absolute; 
   color: #5255CA;
   margin-left: 60%;
 margin-top: 7%;
 }
-input {
+.input1 {
 display: block;
 border-radius: 60px;
 font-family: Montserra;
@@ -46,7 +51,7 @@ outline: none;
 padding-left: 14px;
 margin-bottom: 40px;
 } 
-form {
+.form1 {
 position: absolute;
 margin-left: 60%;
 margin-top: 20%;
@@ -70,11 +75,19 @@ width: 420px;
 }
 .rectangle {
     position: absolute;
-    margin-left: 0%;
-    margin-top: 35%;
+    /* margin-left: 0%;
+    margin-top: 35%; */
+    top: 70%;
 }
 .circle {
     position: absolute;
-    margin-left: 10%;
-    margin-top: 45%;
+    /* margin-left: 10%;
+    margin-top: 45%; */
+    left: 10%;
+    top: 92%;
+}
+@media screen and (max-width: 1355px){
+  .Vxod {
+    margin-top: 40%;
+  }
 }
