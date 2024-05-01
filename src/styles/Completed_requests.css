@@ -1,17 +1,19 @@
 .back-button {
-    background-color: white;
-    border: 1px solid black;
+    background-color: rgba (0, 0, 0, 0);
+    /* border: 1px solid; */
     padding: 10px;
     text-decoration: none;
-    color: black;
+    color: rgb(7, 7, 7);
     font-size: 20px;
-    width: 137px;
-    height: 42px;
+    width: 110px;
+    height: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
     font-family: 'Montserrat', sans-serif;
+    margin-left: 5%;
+    cursor: pointer;
 }
 
 .left {
@@ -29,9 +31,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px;  */
     width: 100%;
-
 }
 
 .container {
@@ -41,7 +42,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 20px; 
 }
 
 .data-section {
@@ -50,7 +51,7 @@
 
 .data-table {
     width: 100%;
-    margin-left: 0;
+    padding: 5%; 
     }
 
     /* Заголовки столбцов */
@@ -63,11 +64,13 @@
 
 .table-name {
     position: relative;
-    text-align: left;
+    text-align: left; 
     font-size: 40px;
     color: #5255CA;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
+    margin-top: 7%;
+    margin-left: 5%;
 }
 
 .search-input {
@@ -78,6 +81,7 @@
     margin-right: 10px;
     border-radius: 20px;
     padding-left: 3%;
+    font-size: 20px;
 }
 
 .search-button {
@@ -89,10 +93,11 @@
     font-size: 20px;
     width: 86px;
     height: 44px;
-    font-size: 20px;
     font-family: 'Montserrat', sans-serif;
     font-weight: regular;
     cursor: pointer;
+    margin-right: 5%;
+    margin-top: 4%;
 }
 
 .search-button:hover {
