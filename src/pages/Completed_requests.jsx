@@ -3,6 +3,7 @@ import DataTable from 'react-data-table-component';
 import css from "../styles/Completed_requests.css";
 import { Link } from 'react-router-dom';
 import { Button } from 'react-bootstrap';
+import Head3 from '../views/global/global/Head3'
 
 function Completed_requests() {
     const [searchValue, setSearchValue] = useState("");
@@ -65,9 +66,12 @@ function Completed_requests() {
     return (
         <div className='container mt-5'>
             <div className="header">
-                <div className="left">
-                    <Link to="/appeals" className="back-button">Назад</Link>
+            <div className="left">
+                <Head3/>
                 </div>
+                {/* <div className="left">
+                    <Link to="/appeals" className="back-button">Назад</Link>
+                </div> */}
                 <div className="right">
                     <input type="text" onChange={handleFilter} className="search-input" placeholder={placeholder} />
                     <button className="search-button">Поиск</button>
