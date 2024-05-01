@@ -45,7 +45,7 @@ const Application = () => {
                     <input className = "input2" type="text" name="name"/>
                 Оставьте жалобу или предложение<br/>
                     <textarea className = "input3" type="text" name="application"/>
-                Загрузите фото<br/>
+               Загрузите фото(максимум 3 фото)<br/>
                 <InputFile accept =".png,.jpg,.jpeg" multiple = {true} files={photo} setFiles={setPhoto}/>
                 <Popup trigger=
                 {<button type="button" className="send">Отправить заявку</button>}
