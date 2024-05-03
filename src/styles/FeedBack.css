@@ -1,14 +1,6 @@
 .body{
     background-color: white;
 }
- /* .l1{
-    font-size: 30px;
-    font-family: 'Open Sans';
-    font-weight: regular;
-    position: absolute;
-    margin-top: 6%;
-    margin-left: 12%; 
-} */
 
 .l2{
     font-size: 35px;
@@ -37,17 +29,6 @@
     margin-left: 55%; 
     border: 1px solid #A5A5FD;
 }
-/*.part3 {
-    background: linear-gradient(90deg, #FFFFFF, #FFEAD1);
-    height: 190px;
-    width: 540px;
-    border-radius: 30px;
-     position: absolute; 
-    margin-top: 54%;
-    margin-left: 55%; 
-    border: 1px solid #A5A5FD;
-}
- */
  .main-container {
     display: flex;
     justify-content: space-between;
