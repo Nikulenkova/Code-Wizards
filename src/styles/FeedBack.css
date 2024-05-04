@@ -49,18 +49,18 @@
 }
 
 .right-section {
-    width: 100%;  
-    display: flex; 
-    flex-direction: column;
-    margin-top: 7%; 
+    margin-top: 9%; 
 }
-
 .left-section {
     width: 100%;  
     margin-left: 15%;
     display: flex; 
     flex-direction: column;
-    margin-top: 7%; 
+    margin-top: 9%; 
+}
+
+.section-title {
+margin-left: 2%;
 }
 
 .form3 {
