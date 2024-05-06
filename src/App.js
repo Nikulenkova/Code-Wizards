@@ -19,6 +19,7 @@ function App() {
         <Route path="/new_requests" element={<New_requests />} /> 
         <Route path="/requests_in_work" element={<Requests_in_work />} />
         <Route path="/completed_requests" element={<Completed_requests />} />
+        <Route path="/read_appeal" element={<Read_appeal />} />
       </Routes>
     </Router>
   );
