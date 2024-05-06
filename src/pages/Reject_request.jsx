@@ -1,8 +1,6 @@
 import React from "react";
 import css from "../styles/Reject_request.css"
 import { useState } from "react";
-import Popup from 'reactjs-popup';
-import copy from '../images/копирование.png'
 
 const BackButton = () => {
     const onClick = () => {
