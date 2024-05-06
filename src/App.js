@@ -7,6 +7,7 @@ import New_requests from './pages/New_requests';
 import Requests_in_work from './pages/Requests_in_work';
 import Completed_requests from './pages/Completed_requests';
 import Appeals from './pages/Appeals';
+import Read_appeal from './pages/Read_appeal';
 
 function App() {
   return (
