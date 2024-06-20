@@ -5,15 +5,13 @@ body {
     sans-serif, 'Open Sans';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #FFFFFF;
-}
+   background: #FFFFFF;   
+} 
 
 .conteiner {
-  position: relative;
     width: 100%;
     height: 100vh;
     display: flex;
-    margin-bottom: 10%; 
 }
 
 code {
@@ -22,85 +20,71 @@ code {
 h1{
   color: #230050;
 }
-/* button{
-  color: #ffffff;
-} */
-/* .logo {
-color: #000000;
-font-family: 'Montserrat';
-font-size: 40px;
-font-weight: bold;
-margin-left: 5%;
-margin-top: 2%;
-position: absolute;
-} */
-/* @media screen and (max-width: 1440px){ */
+
+.lamp_png {
+  width: 116px;
+  height: 188px;
+  margin-left: 52%;
+}
+
+.human_png{
+width: 595px;
+height: 675px;
+margin-right: 0;
+margin-top: 20%;
+margin-left: auto;
+padding-bottom: 8%;
+}
+
+.color {
+  color: #4E2DF6;
+}
+
+.line_png{
+  position: absolute;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+  margin-top: 17%;
+}
+
 .help{
   font-family: 'Open Sans';
-  font-size: 20px;
-  font-weight: bold;
-  color: #000000;
+  font-size: 18px;
+  font-weight: regular;
+  color: #474791;
   position: absolute;  
-  background-color: rgba (0, 0, 0, 0);
+  background-color: rgba(255, 255, 255, 0);
   border-radius: 20px;
   border: none;
   margin-left: 70%;
   margin-top: 2%;
-  height: clamp(25px, 33px, 40px);/*30px;*/
-  width: clamp(90px, 110px, 120px);/*100px;*/
+  height: 40px;
+  width: 120px;
   cursor: pointer;
 }
 .logIn {
   font-family: 'Open Sans';
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 18px;
+  font-weight: regular;
   position: absolute;  
-  background-color: rgba (0, 0, 0, 0);
+  background-color: rgba(255, 255, 255, 0);
   border-radius: 20px;
-  border: none;
-  color: #000000;
+  border: 1px solid #D9D9D9;
+  color: #474791;
   margin-left: 83%;
   margin-top: 2%;
-  height: clamp(25px, 30px, 35px);/*30px;*/
-  width: clamp(65px, 70px, 75px);/*70px;*/
+  height:  40px;
+  width: 95px;
   cursor: pointer;
 }
-/*input[type="text"] { 
-  border: 1px solid #A9A9FF;
-  border-radius: 15px;
-  -webkit-border-radius: 15px; /*закругление углов (Google Chrome) */
-  /*-moz-border-radius: 10px; /*закругление углов (FireFox) */
-   /*-khtml-border-radius: 10px; /*закругление углов (Safari) */
-  /* background: #A9A9FF !important;
-   outline: none; /* удаляет обводку в браузерах хром(желтая) и сафари(синяя) */
-   /*height: 35px;
-   width: 350px;
-   color: #ffffff; /*цвет шрифта при вводе текста*/
-   /*font-size: 20px;
-   font-family: Regular;
-   margin-left: 10%;
-  margin-top: 25%;
-  position: absolute;
-} */
 
  .png{
-  /* margin-left: 60%;
-  margin-top: 12%;     */
  position: absolute; 
  width: clamp(450px, 50%, 508px);
  height: clamp(360px, 50%, 408px); 
- /* left: 59%;
- top: 18%; */
 } 
-.line1 {
-  position: absolute;
-  width: clamp(563px, 20%, 650px);
-  height: clamp(178px, 20%, 274px); 
-  /* margin-left: 35%;
-  margin-top: 36%;   */
-  /* left: 41%;
-  top: 35%; */
-}
+
 .line2 {
   position: absolute;
   width: clamp(110px, 8%, 240px);
@@ -108,7 +92,7 @@ position: absolute;
   margin-top: 35%;  */
   /* left: 65%;
   top: 24%; */
-}
+} */
 .letter {
   position: absolute;
   margin-left: 64%;
@@ -117,42 +101,57 @@ position: absolute;
   top: 27%; */
 }
 .feedback {
-  background: #83ADF2;
-  border-radius: 20px;
-  color: #fff;
-  font-size: clamp(25px, 40%, 30px);
-  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 30px;
+  color: #474791;
+  font-size: 20px;
+  font-weight: regular;
   font-family: 'Open Sans';
   cursor: pointer;
-  width: clamp(373px, 30%, 445px);
-  height: clamp(50px, 30%, 65px);
-  /* margin-left: 20%;
-  margin-top: 50%; */
-  /* left: 66.5%;
-  top: 48%; */
+  width: 300px;
+  height: 60px;
   position: absolute;
-  border: 2px solid #83ADF2;
+  border: 2px solid #D9D9D9;
+  margin-top: 50%;
+  margin-left: 30%;
 }
 
 .application {
-  font-size: clamp(25px, 40%, 30px);
-  font-weight: bold;
+  font-size: 20px;
+  font-weight: regular;
   font-family: 'Open Sans';
-  background: #434DE5;
-  border-radius: 20px;
+  background: #4E2DF6;
+  border-radius: 30px;
   color: #fff;
   position: absolute;
-  border: 2px solid #434DE5;
-  width: clamp(300px, 30%, 345px);
-  height: clamp(59px, 30%, 70px);
-  /* margin-left: 12%;
-  margin-top: 30%; */
+  border: 2px solid #4E2DF6;
+  width: 300px;
+  height: 60px;
+  margin-top: 50%;
+  margin-left: 5%;
   cursor: pointer;
-  /* left: 15%;
-  top: 30%; */
 }
+
+.text_main{
+color: #000000;
+position: absolute;
+font-size: 45px;
+  font-weight: bold;
+  margin-top: 30%;
+  margin-left: 7%;
+}
+
+.text_main1 {
+  color: #6B6B6B;
+  position: absolute;
+  font-size: 18px;
+  font-weight: regular;
+  margin-top: 42%;
+  margin-left: 7%;
+}
+
 h1 {
-  font-size: 25x;
+  font-size: 25px;
   font-weight: lighter;
   font-family: 'Open Sans';
   color: #9A9898;
@@ -189,20 +188,8 @@ h1 {
     font-weight: medium;
     border-radius: 20px;
     text-align: center;
-    /* padding-top: 20px; */
     line-height: 40px;
     padding: 3%;
-  /* background-color: #FFFFFF;
-  height: clamp(200px, 300px, 350px);/*300px;*/
-  /*width: clamp(550px, 650px, 800px);/*650px;*/
-  /*color: #000000;
-  font-family: 'Open Sans';
-  font-size: clamp(23px, 27px, 30px);/*27px;*/
-  /*font-weight: medium;
-  border-radius: 20px;
-  text-align: center;
-  padding: clamp(25px, 30px, 35px);/*30px;*/
-  /*line-height: 40px;  */
 }
 
 .key {
@@ -216,7 +203,6 @@ h1 {
   font-size: 20px;
   padding-left: 2%;
   position: relative;
-  /* margin-top: 9%; */
   outline: none !important;
   margin-right: 15%;
 }
@@ -232,7 +218,8 @@ h1 {
   font-weight: bold;
   cursor: pointer;
   margin-top: 5%; 
-  margin-right: 12%;
+  margin-right: 14%;  
+  position: relative;
 }
 .close {
   display: block;
@@ -248,106 +235,71 @@ h1 {
     linear-gradient(45deg, transparent calc(50% - var(--weight) - var(--aa)), var(--color) calc(50% - var(--weight)), var(--color) calc(50% + var(--weight)), transparent calc(50% + var(--weight) + var(--aa))),
     linear-gradient(-45deg, transparent calc(50% - var(--weight) - var(--aa)), var(--color) calc(50% - var(--weight)), var(--color) calc(50% + var(--weight)), transparent calc(50% + var(--weight) + var(--aa)));
 }
-@media screen and (min-width:1023px) and (max-width: 1260px){
-  /* .close {
-    left: 72%;
-    top:34%;
-  } */
-  .png{
-    margin-left: 55%;
-    margin-top: 20%;   
-  }
-  .line1 {
-    margin-left: 30%;
-    margin-top: 54%; 
-  }
-  .line2 {
-    margin-left: 16%;
-    margin-top: 37%; 
-  }
-  .feedback {
-    margin-left: 14%;
-    margin-top: 57%;
-  }
-  .application{
-    margin-left: 5%;
-    margin-top: 30%;
-  } 
-}
-@media screen and (min-width: 1261px) {
-  .png{
-    margin-left: 55%;
-    margin-top: 20%;   
-  }
-  .line1 {
-    margin-left: 30%;
-    margin-top: 50%; 
-  }
-  .line2 {
-    margin-left: 19%;
-    margin-top: 40%; 
-  }
-  .feedback {
-    margin-left: 14%;
-    margin-top: 56%;
-  }
-  .application{
-    margin-left: 5%;
-    margin-top: 33%;
-  }
-}
-@media (min-width: 1440px)
-{
-  /* .close {
-    left: 72%;
-    top:34%;
-  } */
-  .png{
-    margin-left: 60%;
-    margin-top: 20%;   
-  }
-  .line1 {
-    margin-left: 35%;
-    margin-top: 45%; 
-  }
-  .line2 {
-    margin-left: 21%;
-    margin-top: 35%; 
-  }
-  .feedback {
-    margin-left: 20%;
-    margin-top: 50%;
-  }
-  .application{
-    margin-left: 12%;
-    margin-top: 30%;
-  }
+.line_main{
+position: absolute;
+max-width: 100%;
+max-height: 100%;
+padding-bottom: 5%;
 }
 
-@media (min-width: 1920px)
-{
-  /* .close {
-    left: 67%;
-    top:34%;
-  } */
-  .png{
-    margin-left: 60%;
-    margin-top: 16%;   
+@media screen  and (max-width: 1200px) {
+  .feedback{
+    width: 250px;
+    height: 50px;
   }
-  .line1 {
-    margin-left: 41%;
-    margin-top: 35%; 
+  .application {
+    width: 250px;
+    height: 50px;
   }
-  .line2 {
-    margin-left: 34%;
-    margin-top: 27%; 
+  .line_png{
+    margin-top: 20%;
   }
-  .feedback {
-    margin-left: 30%;
+}
+@media screen  and (min-width: 1500px){
+  .line_png{
+    margin-top: 13%;
+  }
+  .text_main{
+    margin-top: 25%;
+  }
+  .text_main1{
     margin-top: 37%;
   }
   .application{
-    margin-left: 20%;
-    margin-top: 22%;
+    margin-top: 45%;
   }
-} 
+  .feedback{
+    margin-top: 45%;
+  }
+}
+@media screen  and (min-width: 1700px){
+  .line_png{
+    margin-top: 10%;
+  }
+  .text_main{
+    margin-top: 20%;
+    font-size: 55px;
+  }
+  .text_main1{
+    margin-top: 32%;
+    font-size: 28px;
+  }
+  .application{
+    margin-top: 40%;
+    width: 350px;
+    height: 70px;
+    font-size: 30px;
+  }
+  .feedback{
+    margin-top: 40%;
+    width: 350px;
+    height: 70px;
+    font-size: 30px;
+  }
+}
+@media screen  and (min-width: 1900px){
+  .line_png{
+    margin-top: 8%;
+    margin-bottom: 8%;
+  }
+}
