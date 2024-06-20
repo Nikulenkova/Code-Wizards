@@ -1,12 +1,12 @@
 import React from "react";
-import Main from "../../../pages/Main";
+import Arrow from '/Users/nikul/ReactProject/first-project/src/images/Стрелка_назад.png' //Путь измени
 
 class Back_button extends React.Component {
     onclick() {
-        window.location.assign('http://localhost:3000/Main.jsx');
+        window.location.assign('/');
     }
     render() {
-        return (<button className='login' onClick={(e) => this.onclick(e)}>На главную</button>)
+        return (<button className='login' onClick={(e) => this.onclick(e)}><img src={Arrow}></img></button>)
     }
 }  
 
