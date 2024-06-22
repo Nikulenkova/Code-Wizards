@@ -12,7 +12,7 @@
 .custom-table-name {
     position: relative;
     text-align: left;
-    font-size: 30px;
+    font-size: 2vw;
     color: #3E7EFB;
     font-weight: bold;
     font-family: 'Open Sans';
@@ -60,15 +60,16 @@
 .custom-search-input {
     flex-grow: 1;
     margin-top: 0;
-    width: 300px;
+    width: 25vw;
     height: 35px;
     font-family: 'Open Sans';
-    font-size: 15px;
+    font-size: 1vw;
     color: #97A1B4;
     border: 1px solid #97A1B4;
     box-sizing: border-box; 
     border-radius: 20px;
-    padding-left: 3%;
+    padding-left: 2%;
+    position: absolute;
 }
 
 .custom-search-button {
@@ -76,15 +77,16 @@
     border: 1px solid #6C9EFF;
     color: white;
     border-radius: 20px;
-    font-size: 15px;
-    width: 80px;
+    font-size: 1vw;
+    width: 5vw;
     height: 35px;
     font-family: 'Open Sans';
     font-weight: regular;
     box-sizing: border-box;
     align-self: flex-start; 
     cursor: pointer;
-    margin-left: 4%;
+    margin-left: 38%;
+    position: absolute;
 }
 
 .custom-search-button:hover {
@@ -136,4 +138,8 @@
     flex-direction: column;
     align-items: flex-start; 
 }
-
+@media screen and (max-width:1300px){
+    .custom-search-button{
+        margin-left: 40%;
+    }
+}
