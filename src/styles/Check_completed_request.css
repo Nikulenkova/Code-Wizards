@@ -73,9 +73,36 @@ margin-top: 0;
     font-size: 1vw;
     color: #9D9D9D;
 }
-@media screen and (min-width: 1024px) and (max-width: 1300px){
+@media screen and (min-width: 1024px) and (max-width: 1100px){
   .left-check-request{
     margin-left: 12%;
+    width: 30vw;
+  }
+  .right-check-request{
+    width: 30vw;
+  }
+}
+@media screen and (min-width: 1100px) and (max-width: 1210px){
+  .left-check-request{
+    margin-left: 8%;
+    width: 30vw;
+  }
+  .right-check-request{
+    width: 30vw;
+  }
+}
+@media screen and (min-width: 1210px) and (max-width: 1310px){
+  .left-check-request{
+    margin-left: 5%;
+    width: 30vw;
+  }
+  .right-check-request{
+    width: 30vw;
+  }
+}
+@media screen and (min-width: 1310px) and (max-width: 1400px){
+  .left-check-request{
+    margin-left: 2%;
     width: 30vw;
   }
   .right-check-request{
