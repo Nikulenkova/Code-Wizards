@@ -33,12 +33,12 @@
     background-color: #FFEAD1;
     border-radius: 10px;
     color: #CD5826;
-    font-size: 15px;
+    font-size: 1vw;
     font-family: 'Open Sans';
     font-weight: regular;
 }
 .text-info{
-    font-size: 15px;
+    font-size: 1vw;
     font-family: 'Open Sans';
     font-weight: regular;
     color: #97A1B4;
@@ -50,7 +50,7 @@
     height: 35px;
     cursor: pointer;
     color: #97A1B4;
-    font-size: 20px;
+    font-size: 1vw;
     font-family: 'Open Sans';
     font-weight: regular;
     border: none;
@@ -59,14 +59,14 @@
     position: relative;
     font-family: 'Open Sans';
     color: #97A1B4;
-    font-size: 23px;
+    font-size: 1.1vw;
     margin-top: 10%;
   }
   .input-answer{
     position: relative;
     font-family: 'Open Sans';
     color: #97A1B4;
-    font-size: 20px;
+    font-size: 1vw;
     background-color: #E0E8FF;
     border-radius: 20px;
     width: 90%;
@@ -77,7 +77,7 @@
   }
   .send-answer{
     font-family: 'Open Sans';
-    font-size: 20px;
+    font-size: 1vw;
     border-radius: 40px;
     font-weight: bold;
     border: 1px solid #000000;
@@ -95,25 +95,25 @@
     position: relative;
     font-family: 'Open Sans';
     color: #97A1B4;
-    font-size: 23px;
+    font-size: 1.1vw;
   }
    .menu-category {
    position: absolute;
     z-index: 1;
     width: 90%;
     text-align: center;
-    height: auto;
+    height: 40px;
     border-radius: 20px;
     padding: 10px;
     color: #97A1B4;
     font-family: 'Open Sans';
-    font-size: 20px;
+    font-size: 1.1vw;
   }
   .input-topic{
     position: relative;
     font-family: 'Open Sans';
     color: #97A1B4;
-    font-size: 20px;
+    font-size: 1vw;
     background-color: #E0E8FF;
     border: none;
     outline: none;
@@ -125,7 +125,7 @@
   }
 @media screen and (min-width:1024px) and (max-width: 1200px){
   .back-arrow{
-    margin-left: 43%;
+    margin-left: 40%;
   }
   .conteiner-answer{
     width: 650px;
@@ -148,34 +148,34 @@
     width: 750px;
     margin-left: 35%;
   }
-  .text-topic, .input-topic, .menu-category, .answer-appeal, .input-answer, .send-answer{
+  /* .text-topic, .input-topic, .menu-category, .answer-appeal, .input-answer, .send-answer{
     font-size: 16px;
   }
   .left-answer{
     font-size: 16px;
-  }
+  } */
 }
 @media screen and (min-width:1700px){
-  .text-topic, .input-topic, .menu-category, .answer-appeal, .input-answer, .send-answer{
+  /* .text-topic, .input-topic, .menu-category, .answer-appeal, .input-answer, .send-answer{
     font-size: 24px;
-  }
+  } */
   .conteiner-answer{
     width: 970px;
   }
   .left-answer{
-    font-size: 24px;
+    /* font-size: 24px; */
     margin-top: 15%;
   }
 }
 @media screen and (min-width:1900px){
-  .text-topic, .input-topic, .menu-category, .answer-appeal, .input-answer, .send-answer{
+  /* .text-topic, .input-topic, .menu-category, .answer-appeal, .input-answer, .send-answer{
     font-size: 28px;
-  }
+  } */
   .conteiner-answer{
     width: 1150px;
   }
   .left-answer{
-    font-size: 28px;
+    /* font-size: 28px; */
     margin-top: 15%;
   }
 }
