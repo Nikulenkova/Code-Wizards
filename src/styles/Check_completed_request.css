@@ -4,7 +4,7 @@
     padding: 3%;
 }
 .topic-title-request{
-font-size: 3vw;
+font-size: 2.5vw;
 font-family: 'Open Sans';
 font-weight: bold;
 color: #626275;
@@ -33,7 +33,7 @@ margin-top: 0;
     background-color: #5D60E1;
     width: 100%;
     height: 7%;
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     font-family: 'Open Sans';
     font-weight: regular;
     color: #fff;
@@ -46,7 +46,7 @@ margin-top: 0;
     background-color: #938FEC;
     width: 100%;
     height: 7%;
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     font-family: 'Open Sans';
     font-weight: regular;
     color: #fff;
@@ -56,7 +56,7 @@ margin-top: 0;
     padding-bottom: 10px;
   }
 .body-left{
-    font-size: 1.5vw;
+    font-size: 1vw;
     font-family: 'Open Sans';
     font-weight: regular;
     color: #626275;
