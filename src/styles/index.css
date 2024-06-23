@@ -4,8 +4,7 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif, 'Open Sans';
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-   background: #FFFFFF;   
+  -moz-osx-font-smoothing: grayscale;  
 } 
 
 .conteiner {
@@ -50,7 +49,7 @@ padding-bottom: 8%;
 
 .help{
   font-family: 'Open Sans';
-  font-size: 18px;
+  font-size: 1.2vw;
   font-weight: regular;
   color: #474791;
   position: absolute;  
@@ -63,9 +62,11 @@ padding-bottom: 8%;
   width: 120px;
   cursor: pointer;
 }
+
+
 .logIn {
   font-family: 'Open Sans';
-  font-size: 18px;
+  font-size: 1.2vw;
   font-weight: regular;
   position: absolute;  
   background-color: rgba(255, 255, 255, 0);
@@ -104,7 +105,7 @@ padding-bottom: 8%;
   background-color: rgba(255, 255, 255, 0);
   border-radius: 30px;
   color: #474791;
-  font-size: 20px;
+  font-size: 1.2vw;
   font-weight: regular;
   font-family: 'Open Sans';
   cursor: pointer;
@@ -117,7 +118,7 @@ padding-bottom: 8%;
 }
 
 .application {
-  font-size: 20px;
+  font-size: 1.2vw;
   font-weight: regular;
   font-family: 'Open Sans';
   background: #4E2DF6;
@@ -135,7 +136,7 @@ padding-bottom: 8%;
 .text_main{
 color: #000000;
 position: absolute;
-font-size: 45px;
+font-size: 3vw;
   font-weight: bold;
   margin-top: 30%;
   margin-left: 7%;
@@ -144,7 +145,7 @@ font-size: 45px;
 .text_main1 {
   color: #6B6B6B;
   position: absolute;
-  font-size: 18px;
+  font-size: 1.5vw;
   font-weight: regular;
   margin-top: 42%;
   margin-left: 7%;
@@ -184,10 +185,11 @@ h1 {
     width: 650px;
     color: #000000;
     font-family: 'Open Sans';
-    font-size: 25px;
+    font-size: 1.4vw;
     font-weight: medium;
     border-radius: 20px;
     text-align: center;
+    /* padding-top: 20px; */
     line-height: 40px;
     padding: 3%;
 }
@@ -200,9 +202,10 @@ h1 {
   font-family: 'Open Sans';
   width: 70%;
   height: 15%;
-  font-size: 20px;
+  font-size: 1.2vw;
   padding-left: 2%;
   position: relative;
+  /* margin-top: 9%; */
   outline: none !important;
   margin-right: 15%;
 }
@@ -214,7 +217,7 @@ h1 {
   font-family: 'Open Sans';
   height: 20%;
   width: 50%;
-  font-size: 20px;
+  font-size: 1.2vw;
   font-weight: bold;
   cursor: pointer;
   margin-top: 5%; 
