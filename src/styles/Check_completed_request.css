@@ -12,7 +12,7 @@ margin-left: 25%;
 margin-top: 0;
 }
 .left-check-request {
-    width: 34vw;
+    width: 32vw;
     float: left;
     background-color: #fff;
     position: relative;
@@ -21,7 +21,7 @@ margin-top: 0;
     border-radius: 10px;
   }
   .right-check-request {
-    width: 34vw;
+    width: 32vw;
     float: right;
     background-color: #fff;
     position: relative;
@@ -76,5 +76,9 @@ margin-top: 0;
 @media screen and (min-width: 1024px) and (max-width: 1300px){
   .left-check-request{
     margin-left: 12%;
+    width: 30vw;
+  }
+  .right-check-request{
+    width: 30vw;
   }
 }
