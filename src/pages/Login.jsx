@@ -1,28 +1,14 @@
 import React, { useState } from "react";
 import Head2 from "../views/global/global/Head2";
 import InputComponent from "../comps/Input";
-import css from "../styles/Login.css"
-import Table from '../Tablet.png'
-import human from '../Human.png'
-import rectangle from '../прямоугольник.png'
-import circle from '../Круг.png'
+import "../styles/Login.css"
+import Login_man from "../images/Login.png"
 
-function Tablet()
-{
-  return <img className= 'tablet' src={Table}></img>
-}
-function Human()
-{
-  return <img className= 'human' src={human}></img>
-}
-function Rectangle()
-{
-  return <img className= 'rectangle' src={rectangle}></img>
-}
-function Circle()
-{
-  return <img className= 'circle' src={circle}></img>
-}
+function Login_man_png() {
+  return(
+      <img className ="login_man" src={Login_man}></img>
+  )
+  }
 
 class Vxod extends React.Component {
   onclick(){
@@ -37,17 +23,22 @@ const Login = () => {
 
     return (
         <React.Fragment>
-            <Head2></Head2>
-            <Tablet/>
-            <Human/>
-            <h2 className="n">Добро пожаловать!</h2>
+        <div className="container_fon">
+            <Head2/>
+            <div className="div-login">
+            <div className="div_right-login">
+            <div className="title-login">Добро пожаловать!</div>
             <form className="form1">
             <InputComponent name = 'login' placeholder = {"Логин"}/>
             <InputComponent name = 'password' placeholder = {"Пароль"}/> 
-            </form>
-           <Vxod/> 
-            <Rectangle/>
-            <Circle/>
+            <button type="submit" className="Vxod">Войти</button>
+            </form> 
+            </div>
+            <div className="div_left-login">
+              <Login_man_png/>
+            </div>
+            </div> 
+            </div>
         </React.Fragment>
         )
     }
