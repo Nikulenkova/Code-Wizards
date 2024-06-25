@@ -1,4 +1,4 @@
- import React, { useState } from "react";
+import React, { useState } from "react";
  import css from '../styles/FeedBack.css'
  import phone from '../images/phone.png'
  import Popup from 'reactjs-popup';
@@ -37,42 +37,43 @@
      };
 
      return (
-         <div>
-             <Head2/>
-             <div className="main-container">
-             <h1 className="feedback-title">Обратная связь</h1>
-                 <div className="left-section">
-                     <h3 className="section-title">Детали обращения</h3>
-                     <form className="form3">
-                     <h3>Текущий статус</h3>
-                     <p>                         {feedback.status}
-                         <span className={`status ${statusColor}`}></span>
-                     </p>
-                         <h3>Дата регистрации</h3>
-                         <p>{feedback.date}</p>
-                         <h3 htmlFor="userMessage">Обращение</h3>
-                         <p><textarea id="userMessage" className="input3" type="text" readOnly value={feedback.message}/></p>
-                         <h3><img src={feedback.photo} alt="фото 1" /> </h3>
-                     </form>
-                 </div>
-                 <div className="right-section">
-                     <h3 className="section-title">Решение по обращению</h3>
-                     <form className="form4">
-                         <h3>Дата решения</h3>
-                         <p>{feedback.date}</p>
-                         <h3 htmlFor="userMessage">Решение</h3>
-                         <p><textarea id="userMessage" className="input4" type="text" readOnly value={feedback.message} /> </p>
-                         <div className="manager-info">
-                             <h3><img src={feedback.photo} alt="фото 1" /> </h3>
-                             <h3>Контактные данные менеджера</h3>
-                             <p>Имя фамилия</p>
-                             <p>+7 995 ******</p>
-                             <p>example@gmail.com</p>
-                         </div>
-                         <Phone/>
-                     </form>
-                 </div>
-             </div>
+        <div className="conteiner-feedback">
+        <Head2/>
+        <h1 className="feedback-title">Обратная связь</h1>
+        <div className="left-feedback">
+        <div className="delails-appeal">
+        <div className="title-left-column">Детали обращения</div>
+        <div className="form-feedback">
+        <h3>Текущий статус</h3>
+        <p id="black-text">  {feedback.status}
+        <span className={`status ${statusColor}`}></span>
+        </p>
+        <h3>Дата регистрации</h3>
+        <p>{feedback.date}</p>
+        <h3 htmlFor="userMessage">Обращение</h3>
+        <p><textarea id="userMessage" className="input-feedback-appeal" type="text" readOnly value={feedback.message}/></p>
+        <h3><img src={feedback.photo} alt="фото 1" /> </h3>
+        </div>
+        </div>
+        </div>
+        <div className="right-feedback">
+        <div className="decision-appeal">
+        <div className="title-right-column">Решение по обращению</div>
+        <div className="form-decision">
+        <h3>Дата решения</h3>
+        <p>{feedback.date}</p>
+        <h3 htmlFor="userMessage">Решение</h3>
+        <p><textarea id="userMessage" className="input-feedback-appeal" type="text" readOnly value={feedback.message} /> </p>
+        <div className="manager-info">
+        <h3>Контактные данные менеджера</h3>
+        <p>Имя фамилия</p>
+        <p>+7 995 ******</p>
+        <p>example@gmail.com</p>
+        <Phone/>
+        </div>
+        </div>
+        </div>  
+        </div>
          </div>
      );
  };
