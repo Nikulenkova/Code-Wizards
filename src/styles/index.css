@@ -8,7 +8,7 @@ body {
 } 
 
 .conteiner {
-    width: 100%;
+    width: 99%;
     height: 100vh;
     display: flex;
 }
@@ -21,18 +21,17 @@ h1{
 }
 
 .lamp_png {
-  width: 116px;
-  height: 188px;
+  width: 25vw;
+  height: 20vh;
   margin-left: 52%;
 }
 
 .human_png{
-width: 595px;
-height: 675px;
+width: 50vw;
+height: 75vh;
 margin-right: 0;
-margin-top: 20%;
+margin-top: 10%;
 margin-left: auto;
-padding-bottom: 8%;
 }
 
 .color {
@@ -41,10 +40,10 @@ padding-bottom: 8%;
 
 .line_png{
   position: absolute;
-  width: 100%;
-  height: auto;
+  width: 100vw;
+  height: 70vh;
   z-index: -1;
-  margin-top: 17%;
+  margin-top: 7%;
 }
 
 .help{
@@ -80,27 +79,27 @@ padding-bottom: 8%;
   cursor: pointer;
 }
 
- .png{
+ /* .png{
  position: absolute; 
  width: clamp(450px, 50%, 508px);
  height: clamp(360px, 50%, 408px); 
-} 
+}  */
 
-.line2 {
+/* .line2 {
   position: absolute;
   width: clamp(110px, 8%, 240px);
   /* margin-left: 21%;
   margin-top: 35%;  */
   /* left: 65%;
   top: 24%; */
-} */
-.letter {
+/*} */ 
+/* .letter {
   position: absolute;
   margin-left: 64%;
   margin-top: 15%;
   /* left: 65%;
   top: 27%; */
-}
+/*} */
 .feedback {
   background-color: rgba(255, 255, 255, 0);
   border-radius: 30px;
@@ -109,11 +108,11 @@ padding-bottom: 8%;
   font-weight: regular;
   font-family: 'Open Sans';
   cursor: pointer;
-  width: 300px;
-  height: 60px;
+  width: 20vw;
+  height: 8vh;
   position: absolute;
   border: 2px solid #D9D9D9;
-  margin-top: 50%;
+  margin-top: 30%;
   margin-left: 30%;
 }
 
@@ -126,20 +125,21 @@ padding-bottom: 8%;
   color: #fff;
   position: absolute;
   border: 2px solid #4E2DF6;
-  width: 300px;
-  height: 60px;
-  margin-top: 50%;
+  width: 20vw;
+  height: 8vh;
+  margin-top: 30%;
   margin-left: 5%;
   cursor: pointer;
 }
-
+.conteiner-text-main{
+  margin-top: 10%;
+  margin-left: 7%;
+}
 .text_main{
 color: #000000;
 position: absolute;
 font-size: 3vw;
   font-weight: bold;
-  margin-top: 30%;
-  margin-left: 7%;
 }
 
 .text_main1 {
@@ -147,11 +147,10 @@ font-size: 3vw;
   position: absolute;
   font-size: 1.5vw;
   font-weight: regular;
-  margin-top: 42%;
-  margin-left: 7%;
+margin-top: 13%;
 }
 
-h1 {
+/* h1 {
   font-size: 25px;
   font-weight: lighter;
   font-family: 'Open Sans';
@@ -159,7 +158,7 @@ h1 {
   position: absolute;
   margin-left: 10%;
   margin-top: 25%; 
-}
+} */
 .modalWindow {
   height: 100%;
   width: 100%;
@@ -238,71 +237,9 @@ h1 {
     linear-gradient(45deg, transparent calc(50% - var(--weight) - var(--aa)), var(--color) calc(50% - var(--weight)), var(--color) calc(50% + var(--weight)), transparent calc(50% + var(--weight) + var(--aa))),
     linear-gradient(-45deg, transparent calc(50% - var(--weight) - var(--aa)), var(--color) calc(50% - var(--weight)), var(--color) calc(50% + var(--weight)), transparent calc(50% + var(--weight) + var(--aa)));
 }
-.line_main{
-position: absolute;
-max-width: 100%;
-max-height: 100%;
-padding-bottom: 5%;
-}
-
-@media screen  and (max-width: 1200px) {
-  .feedback{
-    width: 250px;
-    height: 50px;
-  }
-  .application {
-    width: 250px;
-    height: 50px;
-  }
+@media screen and (min-width:1024px) and (max-width:1200px){
   .line_png{
-    margin-top: 20%;
-  }
-}
-@media screen  and (min-width: 1500px){
-  .line_png{
-    margin-top: 13%;
-  }
-  .text_main{
-    margin-top: 25%;
-  }
-  .text_main1{
-    margin-top: 37%;
-  }
-  .application{
-    margin-top: 45%;
-  }
-  .feedback{
-    margin-top: 45%;
-  }
-}
-@media screen  and (min-width: 1700px){
-  .line_png{
-    margin-top: 10%;
-  }
-  .text_main{
-    margin-top: 20%;
-    font-size: 55px;
-  }
-  .text_main1{
-    margin-top: 32%;
-    font-size: 28px;
-  }
-  .application{
-    margin-top: 40%;
-    width: 350px;
-    height: 70px;
-    font-size: 30px;
-  }
-  .feedback{
-    margin-top: 40%;
-    width: 350px;
-    height: 70px;
-    font-size: 30px;
-  }
-}
-@media screen  and (min-width: 1900px){
-  .line_png{
-    margin-top: 8%;
-    margin-bottom: 8%;
+    height: 60vh;
+    margin-top: 7%;
   }
 }
