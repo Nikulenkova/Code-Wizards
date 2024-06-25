@@ -1,7 +1,6 @@
 import React, { useState } from "react";
- import css from '../styles/FeedBack.css'
+ import '../styles/FeedBack.css'
  import phone from '../images/phone.png'
- import Popup from 'reactjs-popup';
  import Head2 from '../views/global/global/Head2'
 
  function Phone()
