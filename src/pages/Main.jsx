@@ -1,11 +1,11 @@
 import React from "react";
 import Head from '../views/global/global/Head';
-import css from "../styles/index.css"
+import "../styles/index.css"
 import Popup from 'reactjs-popup';
-import main_woman from '../images/main_woman.png'
 import lamp from '../images/Лампа.png'
 import human_main from '../images/Human_main.png'
 import line_main from '../images/Line_main1.png'
+
 
 function Lamp()
 {
@@ -66,8 +66,10 @@ const Main = () => {
         <React.Fragment>
           <div className="conteiner">
             <Head/>
+            <div className="conteiner-text-main">
             <p className="text_main">Говорите <span className="color">свободно,</span> <br></br>оставайтесь анонимными</p>
             <p className="text_main1">Оставьте свою заявку и получите обратную связь </p>
+            </div>
             <Lamp/>
             <Human_main/>
             <Line_main/>
