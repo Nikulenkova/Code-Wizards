@@ -7,7 +7,7 @@ import '../styles/Personal_account.css';
 import '../styles/DataTable.css';
 import Menu from '../comps/Menu'
 
-function PersonalAccount() {
+function New_request() {
     const [searchValue, setSearchValue] = useState("");
 
     function handleChange(event) {
@@ -102,4 +102,4 @@ function PersonalAccount() {
      );
  }
 
-export default PersonalAccount;
+export default New_request;
