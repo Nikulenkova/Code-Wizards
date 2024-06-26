@@ -5,8 +5,8 @@ import { CiViewList } from "react-icons/ci";
 import { IoIosSearch } from "react-icons/io";
 import '../styles/Personal_account.css';
 import '../styles/DataTable.css';
-import Menu from '../comps/Menu'
-import Pagination from './Pagination'; 
+import Menu from '../comps/Menu.jsx'
+import Pagination from "../pages/Pagination.jsx"; 
 
 function PersonalAccount() {
     const data = [
@@ -20,90 +20,99 @@ function PersonalAccount() {
         { id: 8, date: '28.03.2024', name: 'Ольга Ольгина', action: 'Просмотр' },
         { id: 9, date: '29.03.2024', name: 'Николай Николаев', action: 'Просмотр' },
         { id: 10, date: '30.03.2024', name: 'Александр Александров', action: 'Просмотр' },
-        { id: 11, date: '30.03.2024', name: 'Алексанр Александров', action: 'Просмотр' },
-    ]
-    
+        { id: 11, date: '30.03.2024', name: 'Александр Александров', action: 'Просмотр' },
+    ];
+
     const [searchValue, setSearchValue] = useState("");
     const [records, setRecords] = useState(data);
     const [currentPage, setCurrentPage] = useState(1);
-    const [recordsPerPage] = useState(5); 
+    const [recordsPerPage] = useState(5);
+    const [iconActive, setIconActive] = useState(false);
 
     function handleChange(event) {
         setSearchValue(event.target.value);
     }
 
     const placeholder = searchValue.length === 0 ? "Найти обращение..." : "";
-    const [iconActive, setIconActive] = useState(false);
 
     const columns = [
         { name: <span className="custom-table-header">Дата обращения</span>, selector: 'date', cell: row => <span className="custom-date-cell">{row.date}</span> },
         { name: <span className="custom-table-header">Отправитель</span>, selector: 'name', cell: row => <span className="custom-name-cell">{row.name}</span> },
         { name: <span className="custom-table-header">Действие</span>, cell: row => <Button variant="primary" className="custom-action-button">Просмотр</Button> }
-             ];
+    ];
 
     function handleFilter(event) {
         const value = event.target.value.toLowerCase();
         const newData = data.filter(row =>
             row.date.toLowerCase().includes(value) ||
-            row.topic.toLowerCase().includes(value) ||
             row.name.toLowerCase().includes(value)
         );
         setRecords(newData);
+        setCurrentPage(1); // Сброс текущей страницы на первую после фильтрации
     }
-     const handleIconClick = () => {
-         console.log('Иконка была нажата');
-         setIconActive(!iconActive);
-     };
 
-     const handlePageChange = (pageNumber) => {
+    const handleIconClick = () => {
+        setIconActive(!iconActive);
+    };
+
+    const handlePageChange = (pageNumber) => {
         setCurrentPage(pageNumber);
     };
+
     const indexOfLastRecord = currentPage * recordsPerPage; // индекс последней записи
     const indexOfFirstRecord = indexOfLastRecord - recordsPerPage; // индекс первой записи
     const currentRecords = records.slice(indexOfFirstRecord, indexOfLastRecord);
+
     const totalPages = Math.ceil(records.length / recordsPerPage); // общее количество страниц
 
     return (
-<div className="personal-account-container">
-            <Menu/>
-             <div className="content-p">
-                 <div className='container mt-5'>
-                     <div className="header">
-                         <div className="left"></div>
-                         <div className="right">
-                    <input type="text" onChange={handleFilter} className="custom-search-input" placeholder={placeholder} />
-                    <button className="custom-search-button" onClick={handleFilter}>
-                           Поиск
-                         </button>
-                         </div>
-                     </div>
-                     <div className="data-section">
-                         <div className="custom-table-name">
-                             Новые обращения
-                             <button className="custom-icon-button" onClick={handleIconClick} title="Показать все обращения">
-                                 <CiViewList size={30} className="icon" />
-                             </button>
-                             <button className="custom-search-icon" onClick={handleIconClick} title="Найти одинаковые обращения">
-                                 <IoIosSearch size={30} className="icon" />
-                             </button>
-                         </div>
-                         <DataTable
-                             columns={columns}
+        <div className="personal-account-container">
+            <Menu />
+            <div className="content-p">
+                <div className='container mt-5'>
+                    <div className="header">
+                        <div className="left"></div>
+                        <div className="right">
+                            <input type="text" onChange={handleFilter} className="custom-search-input" placeholder={placeholder} />
+                            <button className="custom-search-button" onClick={handleFilter}>
+                                Поиск
+                            </button>
+                        </div>
+                    </div>
+                    <div className="data-section">
+                        <div className="custom-table-name">
+                            Новые обращения
+                            <button
+                                className={`custom-icon-button ${iconActive ? 'active' : ''}`}
+                                onClick={handleIconClick}
+                                title="Показать все обращения"
+                            >
+                                <CiViewList size={30} className="icon" />
+                            </button>
+                            <button
+                                className={`custom-search-icon ${iconActive ? 'active' : ''}`}
+                                onClick={handleIconClick}
+                                title="Найти одинаковые обращения"
+                            >
+                                <IoIosSearch size={30} className="icon" />
+                            </button>
+                        </div>
+                        <DataTable
+                            columns={columns}
                             data={currentRecords}
                             fixedHeader
                             className="custom-data-table"
-                            noPagination
-                         />
-                           <Pagination
+                        />
+                        <Pagination
                             currentPage={currentPage}
                             totalPages={totalPages}
                             handlePageChange={handlePageChange}
                         />
-                     </div>
-                 </div>
-             </div>
-         </div>
-     );
- }
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+}
 
 export default PersonalAccount;
