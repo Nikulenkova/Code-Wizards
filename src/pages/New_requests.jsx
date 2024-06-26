@@ -1,4 +1,4 @@
-import React, { useState, Event } from "react";
+import React, { useState } from "react";
 import DataTable from 'react-data-table-component';
 import { Button } from 'react-bootstrap';
 import { CiViewList } from "react-icons/ci";
@@ -7,7 +7,7 @@ import '../styles/Personal_account.css';
 import '../styles/DataTable.css';
 import Menu from '../comps/Menu'
 
-function New_request() {
+function PersonalAccount() {
     const [searchValue, setSearchValue] = useState("");
 
     function handleChange(event) {
@@ -47,6 +47,20 @@ function New_request() {
             topic: 'Не работает Wi-Fi',
             name: 'Анатолий Некрасов',
             action: 'Просмотр'
+        },
+        {
+            id: 3,
+            date: '25.03.2024',
+            topic: 'Невкусный кофе',
+            name: 'Аноним',
+            action: 'Просмотр'
+        },
+        {
+            id: 4,
+            date: '29.04.2024',
+            topic: 'Сломан принтер',
+            name: 'Петр',
+            action: 'Просмотр'
         }
 
     ]
@@ -82,10 +96,10 @@ function New_request() {
                      <div className="data-section">
                          <div className="custom-table-name">
                              Новые обращения
-                             <button className="custom-icon-button" onClick={handleIconClick}>
+                             <button className="custom-icon-button" onClick={handleIconClick} title="Показать все обращения">
                                  <CiViewList size={30} className="icon" />
                              </button>
-                             <button className="custom-search-icon" onClick={handleIconClick}>
+                             <button className="custom-search-icon" onClick={handleIconClick} title="Найти одинаковые обращения">
                                  <IoIosSearch size={30} className="icon" />
                              </button>
                          </div>
@@ -102,4 +116,4 @@ function New_request() {
      );
  }
 
-export default New_request;
+export default PersonalAccount;
