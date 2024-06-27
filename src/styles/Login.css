@@ -1,3 +1,15 @@
+.application-background {
+  background-color: #D3DEFE;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
+
+.body11 {
+  width: 100vw;
+  height: 100vh;
+}
 .login {
   position: absolute;  
   margin-left: 5%;
@@ -16,7 +28,7 @@ font-family: 'Open Sans';
   margin-left: 17%;
   margin-top: 10%;
 }
-.input1 {
+.input-login {
 display: block;
 border-radius: 60px;
 font-family: 'Open Sans';
@@ -37,7 +49,7 @@ margin-top: 35%;
 margin-left: 5%;
 } 
 .Vxod {
-  font-family: Montserra;
+  font-family: 'Open Sans';
   font-size: 2vw;
   font-weight: bold;
   background-color: #83ADF2;
@@ -59,8 +71,8 @@ margin-left: 5%;
   border-radius: 50px;
   font-family: 'Open Sans';
   padding: 3%;
-  margin: 7% 12%;
-  background-color: #D3DEFE;
+  margin: 3.5% 12%;
+  background: linear-gradient(to right, #E8EEFF 50%, #FFFFFF 50%);
 }
 .div_right-login{
   float: right;
@@ -72,7 +84,7 @@ margin-left: 5%;
   float: left;
   position: relative;
   width: 50%;
-  margin-top: 15%;
+  margin-top: 11%;
   margin-left: 5%;
 }
 .login_man{
