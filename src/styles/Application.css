@@ -18,7 +18,7 @@
 
     .text_form{
         color: #97A1B4;
-        font-size: 20px;
+        font-size: 1.2vw;
         font-weight: regular;
     }
 
@@ -32,8 +32,9 @@
     font-size: 25px;
     font-weight: regular;
     color: #507699;
-    padding: 3%;
-     margin: 7% 7%; 
+    padding: 1%; 
+    padding-left: 2%;
+    margin: 4% 9%; 
     }
     .form_right{
     float: right;
@@ -49,6 +50,9 @@
     .appl{
         position: absolute;
         margin-top: 20%;
+        width: 30vw;
+        height: 47vh;
+        margin-left: 5%;
     }
     .input2 {
     border-radius: 20px;
@@ -60,7 +64,7 @@
     height: 40px;
     padding-left: 10px;
     outline:none;
-    margin-bottom: 8%;
+    margin-bottom: 1%;
     }
     .text_input{
     border-radius: 20px;
@@ -70,11 +74,11 @@
     background-color: #E0E8FF;
     border: none;
     width: 85%;;
-    height: 250px;
+    height: 210px;
     padding-left: 10px;
     padding-top: 10px;
     outline:none;
-    margin-bottom: 8%;
+    margin-bottom: 1%;
     }
     
     #textbox {
@@ -103,7 +107,7 @@
     height: 60px;
     position: relative;
     cursor: pointer;
-    margin-top: 25%;
+    margin-top: 22%;
     margin-left: 17%;
     }
     
