@@ -2,14 +2,17 @@
     width: 70vw;
     float: right;
     padding: 3%;
+    padding-top: 0;
 }
 .topic-title-request{
 font-size: 2.5vw;
 font-family: 'Open Sans';
 font-weight: bold;
 color: #626275;
-margin-left: 25%;
+margin-left: 35%;
 margin-top: 0;
+position: relative;
+padding-top: 6%;
 }
 .left-check-request {
     width: 34vw;
@@ -17,7 +20,7 @@ margin-top: 0;
     background-color: #fff;
     position: relative;
     height: auto;
-    margin-top: 10%;
+    margin-top:5%; 
     border-radius: 10px;
   }
   .right-check-request {
@@ -26,7 +29,7 @@ margin-top: 0;
     background-color: #fff;
     position: relative;
     height: auto;
-    margin-top: 10%;
+    margin-top: 5%;
     border-radius: 10px;
   }
   .title-left-column{
